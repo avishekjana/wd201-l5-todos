@@ -1,0 +1,118 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.TodoPage-title {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #453c52;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.TodoSection-title {
+  display: flex;
+  color: #453c52;
+  align-items: center;
+  margin-bottom: 0px;
+  /* font-size: 34px;
+  line-height: 1.4;
+  color: #453c52; */
+}
+.TodoSection-title-text {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+  line-height: 1.4;
+}
+.TodoSection-title-remcount {
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  color: #453c52;
+}
+h4 {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #453c52;
+}
+.TodoSection-todo {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-left: 32px;
+  color: #453c52;
+}
+
+.TodoSection {
+  margin-bottom: 32px;
+  /* margin-left: 32px; */
+}
+.AddTodo-text {
+  background: #ffffff;
+  border: 1px solid #bfb8cc;
+  border-radius: 4px;
+  height: 28px;
+  padding-left: 12px;
+  margin-right: 6px;
+}
+.AddTodo-date {
+  background: #ffffff;
+  border: 1px solid #bfb8cc;
+  border-radius: 4px;
+  height: 30px;
+  margin-right: 6px;
+  padding-left: 12px;
+}
+.AddTodo-button {
+  background: #48bb78;
+  border-radius: 4px;
+  height: 32px;
+  width: 72px;
+  border: 1px solid #48bb78;
+  color: white;
+}
+.TodoList {
+  list-style: none;
+  padding-left: 6px;
+  margin: 0;
+}
+.TodoItem {
+  font-size: 14px;
+  /* margin-left: 8px; */
+  margin-bottom: 6px;
+  color: #453c52;
+}
+.TodoItem-container {
+  display: inline-flex;
+  padding: 2px 8px;
+  align-items: center;
+}
+.TodoItem-container:hover {
+  background: #f1edf7;
+  border-radius: 4px;
+  border-radius: 4px;
+}
+.TodoItem-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+.TodoItem-overduelabel {
+  /* margin-left: 10px; */
+  margin: 4px 0 4px 10px;
+  font-size: 12px;
+  color: #c53030;
+  letter-spacing: 0.09px;
+  display: inline;
+}
+.TodoItem-duedate {
+  font-size: 10px;
+  color: rgb(141, 133, 154);
+  margin-left: 10px;
+}
+.TodoItem-delete {
+  visibility: hidden;
+}

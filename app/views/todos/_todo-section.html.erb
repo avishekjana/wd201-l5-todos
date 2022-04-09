@@ -1,0 +1,20 @@
+  <section class="TodoSection">
+    <h2 class="TodoSection-title">
+      <p class="TodoSection-title-text"><%= section_title %></p>
+      <p class="TodoSection-title-remcount"><%= todos.completed.count %> /<%= todos.count %></p>
+    </h2>
+    <ul class="TodoList">
+      <% todos.each do |todo| %>
+        <li class="TodoItem">
+          <label class="TodoItem-container">
+            <input type="checkbox" class="TodoItem-checkbox" />
+            <%= todo.todo_text %>
+            <% if show_due_date %>
+              <p class="TodoItem-duedate"><%= todo.due_date.strftime("%d %b") %></p>
+            <% end %>
+            <img src="./delete.png" class="TodoItem-delete" alt="Delete" width="18">
+          </label>
+        </li>
+      <% end %>
+    </ul>
+  </section>
