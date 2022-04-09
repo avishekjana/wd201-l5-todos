@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.Todo-title {
+  font-size: 48px;
+}

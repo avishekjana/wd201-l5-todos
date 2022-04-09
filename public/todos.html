@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO App</title>
+  <link rel="stylesheet" type="text/css" href="todo-app.css" />
+</head>
+<body>
+  <h1 class="TodoPage-title">My TODO List</h1>
+  <article>
+    <section class="AddTodo">
+      <input class="AddTodo-text" type="text" placeholder="What's next?" />
+      <input class="AddTodo-date" type="date" />
+      <input class="AddTodo-button" type="submit" value="Add" />
+    </section>
+    <section class="TodoSection">
+      <h2 class="TodoSection-title">
+        <p class="TodoSection-title-text">Due today</p>
+        <p class="TodoSection-title-remcount">0/4</p>
+      </h2>
+      <ul class="TodoList">
+        <li class="TodoItem">
+          <label class="TodoItem-container">
+            <input type="checkbox" class="TodoItem-checkbox" />
+            Submit WD 201
+            <p class="TodoItem-overduelabel">Overdue</p>
+            <img src="./delete.png" class="TodoItem-delete" alt="Delete" width="18">
+          </label>
+        </li>
+        <li class="TodoItem">
+          <label class="TodoItem-container">
+            <input type="checkbox" class="TodoItem-checkbox" />
+            Submit WD 202
+            <p class="TodoItem-overduelabel">Overdue</p>
+            <img src="./delete.png" class="TodoItem-delete" alt="Delete" width="18">
+          </label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="TodoSection">
+      <h2 class="TodoSection-title">
+        <p class="TodoSection-title-text">Due tomorrow</p>
+        <p class="TodoSection-title-remcount">0/3</p>
+      </h2>
+      <ul class="TodoList">
+        <li class="TodoItem">
+          <label class="TodoItem-container">
+            <input type="checkbox" class="TodoItem-checkbox" />
+            Complete WD 401
+            <img src="./delete.png" class="TodoItem-delete" alt="Delete" width="18">
+          </label>
+        </li>
+        <li class="TodoItem">
+          <label class="TodoItem-container">
+            <input type="checkbox" class="TodoItem-checkbox" />
+            Start with WD 402
+            <img src="./delete.png" class="TodoItem-delete" alt="Delete" width="18">
+          </label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="TodoSection">
+      <h2 class="TodoSection-title">
+        <p class="TodoSection-title-text">Remaining</p>
+        <p class="TodoSection-title-remcount">0/3</p>
+      </h2>
+      <ul class="TodoList">
+        <li class="TodoItem">
+          <label class="TodoItem-container">
+            <input type="checkbox" class="TodoItem-checkbox" />
+            Complete WD 501
+            <img src="./delete.png" class="TodoItem-delete" alt="Delete" width="18">
+          </label>
+        </li>
+        <li class="TodoItem">
+          <label class="TodoItem-container">
+            <input type="checkbox" class="TodoItem-checkbox" />
+            Complete WD 602
+            <img src="./delete.png" class="TodoItem-delete" alt="Delete" width="18">
+          </label>
+        </li>
+      </ul>
+    </section>
+  </article>
+</body>
+</html>
