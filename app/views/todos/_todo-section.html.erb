@@ -7,7 +7,14 @@
       <% todos.each do |todo| %>
         <li class="TodoItem">
           <label class="TodoItem-container">
-            <input type="checkbox" class="TodoItem-checkbox" <%= todo.completed ? 'checked' : nil %> />
+            <%= form_with(url: "/todos/#{ todo.id}", method: "PUT") do %>
+              <input 
+                type="checkbox" 
+                name="completed" 
+                class="TodoItem-checkbox" <%= todo.completed ? 'checked' : nil %> 
+                onclick="this.form.submit()"
+              />
+            <% end %>
             <span class="<%= todo.completed ? 'line-through' : nil %>">
               <%= todo.todo_text %>
             </span>
