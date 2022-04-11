@@ -90,7 +90,7 @@ h4 {
   padding: 2px 8px;
   align-items: center;
 }
-.TodoItem-container:hover {
+.TodoItem:hover {
   background: #f1edf7;
   border-radius: 4px;
   border-radius: 4px;
@@ -115,6 +115,10 @@ h4 {
 }
 .TodoItem-delete {
   visibility: hidden;
+  margin-left: 12px;
+}
+.TodoItem:hover .TodoItem-delete {
+  visibility: visible;
 }
 .line-through {
   text-decoration: line-through;
