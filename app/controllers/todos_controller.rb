@@ -16,7 +16,8 @@ class TodosController < ApplicationController
     due_date = DateTime.parse(params[:due_date])
     new_todo = Todo.create!(todo_text: todo_text, due_date: due_date, completed: false)
     response_text = "Hey, your new todo is created with the id #{new_todo.id}"
-    render plain: response_text
+    # render plain: response_text
+    redirect_to todos_path
   end
 
   def update
