@@ -116,3 +116,6 @@ h4 {
 .TodoItem-delete {
   visibility: hidden;
 }
+.line-through {
+  text-decoration: line-through;
+}
