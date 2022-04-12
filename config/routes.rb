@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # root to: "/"
-  get "/" => "todos#index"
+  get "/" => "home#index"
   resources :todos
   resources :users
   get "/signin" => "sessions#new", as: :new_session
