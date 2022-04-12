@@ -1,0 +1,22 @@
+<p class="NewUsers-title">Welcome </p>
+<section class="UsersNew">
+  <%= form_with(url: "/users", method: "POST") do |form| %>
+    <div class="FormSection">
+      <p class="Form-input-label">First name:</p>
+      <%= form.text_field :first_name, class: "Form-input" %>
+    </div>
+    <div class="FormSection">
+      <p>Last name:</p>
+      <%= form.text_field :last_name, class: "Form-input" %>
+    </div>
+    <div class="FormSection">
+      <p>Email:</p>
+      <%= form.email_field :email, class: "Form-input" %>
+    </div>
+    <div class="FormSection">
+      <p>Password:</p>
+      <%= form.password_field :password, class: "Form-input" %>
+    </div>
+    <%= form.submit "Signup", class: "Submit-button" %>
+  <% end %>
+</section>
