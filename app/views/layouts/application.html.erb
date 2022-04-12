@@ -11,7 +11,10 @@
 
   <body>
     <% if @current_user %>
-      <p class="UserHeader"><%= @current_user.first_name %></p>
+      <div class="UserHeader">
+        Welcome! <%= @current_user.first_name %>
+        <%= button_to "Signout", destroy_session_path, method: :delete, class: 'btn' %>
+      </div>
     <% end %>
     <%= yield %>
   </body>
