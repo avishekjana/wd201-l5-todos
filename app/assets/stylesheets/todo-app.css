@@ -130,8 +130,6 @@ h4 {
   margin-bottom: 32px;
   font-size: 30px;
 }
-.UsersNew {
-}
 .FormSection {
   margin-bottom: 10px;
 }
@@ -142,4 +140,7 @@ h4 {
 .Form-input-label {
   font-size: #555;
   margin-bottom: 8px;
+}
+.Flash-error {
+  color: darkred;
 }

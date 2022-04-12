@@ -11,7 +11,8 @@ class SessionsController < ApplicationController
       redirect_to "/"
       # render plain: "You have entered correct password"
     else
-      render plain: "Incorrect email or password"
+      flash[:error] = "Invalid credentials"
+      redirect_to new_session_path
     end
   end
 

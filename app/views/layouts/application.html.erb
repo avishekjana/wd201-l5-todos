@@ -16,6 +16,10 @@
         <%= button_to "Signout", destroy_session_path, method: :delete, class: 'btn' %>
       </div>
     <% end %>
+    <%if flash[:error] %>
+      <p class="Flash-error"><%= flash[:error] %></p>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

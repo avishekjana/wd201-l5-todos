@@ -1,6 +1,9 @@
 class Todo < ApplicationRecord
   belongs_to :user
 
+  validates :todo_text, presence: true, length: { minimum: 2 }
+  validates :due_date, presence: true
+
   def self.of_user user_id
     where(user_id: user_id)
   end
