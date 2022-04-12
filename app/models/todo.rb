@@ -1,6 +1,10 @@
 class Todo < ApplicationRecord
   belongs_to :user
 
+  def self.of_user user_id
+    where(user_id: user_id)
+  end
+
   def to_displayable_string
     display_status = completed ? "[x]" : "[ ]"
     display_date = due_today? ? nil : due_date

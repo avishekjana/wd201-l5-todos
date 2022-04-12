@@ -9,6 +9,6 @@ class UsersController < ApplicationController
     password = params[:password]
     new_user = User.create!(first_name: params[:first_name], last_name: params[:last_name], email: email, password: password)
     session[:current_user_id] = new_user.id
-    redirect_to todos_path
+    redirect_to "/"
   end
 end
